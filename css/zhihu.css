@@ -1,0 +1,251 @@
+html,body,div,h1,h2,input,form {
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+}
+button {
+	box-shadow: none;
+	border: none;
+}
+.zhihu {
+	overflow: hidden;
+	height: 100%;
+    background: #f7fafc;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+    font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+
+}
+.index-main{
+    padding-top: 10px;
+    min-height: 100%;
+    margin-bottom: -42px;
+    position: relative;
+}
+.index-main-body{
+	margin:12px auto;
+	width:300px;
+	min-height: 590px;
+}
+.index-head{
+	text-align: center;
+}
+
+.index-head h1{
+	margin: 0 auto;
+    width: 160px;
+    height: 74px;
+    background: url("../img/logo.png") no-repeat;
+    background-size: contain;
+    color:transparent;
+}
+.index-nav{
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.index-head h2{
+	margin: 30px 0 20px;
+	font-weight: 400;
+	font-size: 18px;
+	text-align: center;
+}
+.nav-slider{
+	position: relative;
+	display: inline-block;
+    *display:inline;
+	*zoom: 1;
+}
+.nav-slider a{
+	display: block;
+    color: #555;
+    float: left;
+    line-height: 35px;
+    width: 4em;
+}
+.nav-slider a.active{
+    color: #0f88eb;
+}
+
+.nav-slider-bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 0.8em;
+    width: 2.4em;
+    height: 2px;
+    background: #0f88eb;
+}
+
+form{
+	display: block;
+	margin-top: 0em;
+	overflow: hidden;
+}
+.index-body .view{
+	text-align: left;
+	font-size: 14px;
+}
+.view-signin{
+    display: none;
+}
+.index-body .view .group-inputs{
+	padding:  0;
+	border: 1px solid #d5d5d5;
+	border-radius: 3px;
+}
+.index-body .view .group-inputs .input-wrapper{
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	height: 47px;
+	line-height: 47px;
+	background: #ffffff;
+}
+
+.index-body .view .group-inputs .input-wrapper+.input-wrapper{
+    border-top:1px solid #e8e8e8;
+}
+
+.index-body .view .group-inputs .input-wrapper input,.index-body .view .group-inputs .input-wrapper input:focus{
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #fff;
+    outline: none;/*È¥µôÄ¬ÈÏfocus±ß¿ò*/
+
+    line-height: 19px;
+    color: #555;
+    padding: 1em 0.8em;
+}
+.index-body .view .button-wrapper{
+    margin-top: 18px;
+}
+
+.index-body .view .button-wrapper button{
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-size: 15px;
+    background: #0f88eb;
+    box-shadow: none;
+    border: 0;
+    border-radius: 3px;
+    line-height: 41px;
+    color: #ffffff;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.index-body .view .signin-misc-wrapper{
+	margin-top: 22px;
+}
+.index-body .view .signin-misc-wrapper .remember-me{
+	float: left;
+}
+.index-body .view .signin-misc-wrapper .unable-login{
+	color: #555;
+	float: right;
+}
+.weibo-sign-wrapper{
+	clear:both;
+	float: left;
+	margin-top: 22px;
+}
+
+.view-signup .QRCode{
+	margin-top: 48px;
+}
+
+.view-signin .QRCode{
+	margin-top: 22px;
+}
+.view-body .view .QRCode{
+	position: relative;
+	width: 100%;
+	height: 41px;
+	line-height: 39px;
+	border: 1px solid #96c2e9;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 14px;
+}
+.QRButton{
+	display: block;
+	border: 1px solid #96c2e9;
+	border-radius: 3px;
+	outline: none;
+	width: 100%;
+    height: 41px;
+    background-color: #ffffff;
+    color: #5fa6e5;
+}
+.QRButton .sprite-index-icon-qrcode{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/sprites.png");
+    background-repeat: no-repeat;
+    background-position: -78px 0;
+    vertical-align: middle;
+}
+.QRCard{
+	clear: both;
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	bottom: 145px;
+	width: 310px;
+	height: 310px;
+	color: #555;
+	background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.15);
+    border-radius: 10px;
+    display: none;
+}
+.QR-image{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+	margin-top: -125px;
+	width: 250px;
+	height: 250px;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../img/qr-code.png");
+}
+.QRCard .sprite-index-icon-arrow{
+	position: absolute;
+	margin: auto;
+	bottom: -14px;
+	left: 50%;
+	background-position: 0 0;
+	width: 54px;
+	height: 42px;
+	margin-left: -27px;
+	background-image: url("../img/sprites.png");
+	background-repeat: no-repeat;
+}
+
+.index-foot{
+	color: #555;
+	display: block;
+	width: 100%;
+	position: relative;
+	bottom: 0;
+	font-size: 12px;
+	line-height: 21px;
+	text-align: center;
+}
+
+.index-foot span, .index-foot a{
+	color: #aebdc9;
+}
+.index-foot .dot{
+	margin: 0 3px;
+}
